@@ -50,6 +50,7 @@ gem 'mini_magick', '~> 4.11'
 gem 'fog-aws', '~> 3.12'
 gem 'figaro', '~> 1.2'
 gem 'unf', '~> 0.1.4'
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
