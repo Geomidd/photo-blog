@@ -23,4 +23,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+## Features to improve/add
+- [ ] Add icon library such as Font Awesome
+- [ ] Add tests
+- [ ] Add user system
+- [ ] Switch to ActiveStorage
