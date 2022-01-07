@@ -15,7 +15,9 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
+* How to run the test suite:
+
+`bundle exec rspec --format documentation`
 
 * Services (job queues, cache servers, search engines, etc.)
 
