@@ -1,4 +1,8 @@
-<%= form_with(model: post) do |form| %>
+<div class="card mx-auto w-25">
+  <div class="card-body">
+    <h5 class="card-title">Edit <%= post.title %></h5>
+    <div class="card-text form">
+      <%= form_with(model: post) do |form| %>
   <% if post.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -12,21 +16,27 @@
   <% end %>
 
   <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.label :image, style: "display: block" %>
-    <%= form.file_field :image %>
+    <%= form.label :image, class: "form-label" %>
+    <%= form.file_field :image, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%= form.label :description, class: "form-label" %>
+    <%= form.text_area :description, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit 'Update', class: "btn btn-primary form-control mt-4" %>
   </div>
 <% end %>
+
+    </div>
+  </div>
+  <div class="footer">
+  </div>
+</div>

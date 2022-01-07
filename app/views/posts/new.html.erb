@@ -1,9 +1,5 @@
-<h1>New post</h1>
+<div class="d-flex justify-content-between w-25 mx-auto">
+  <%= link_to "Back", posts_path, class: "btn btn-outline-text" %>
+</div>
 
 <%= render "form", post: @post %>
-
-<br>
-
-<div>
-  <%= link_to "Back to posts", posts_path %>
-</div>
